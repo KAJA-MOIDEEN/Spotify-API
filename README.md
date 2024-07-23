@@ -2,6 +2,8 @@
 
 This web application allows users to browse Spotify genres, select playlists, and listen to track previews. It uses the Spotify Web API to fetch data and play audio previews directly in the browser.
 
+site is live at https://kaja-moideen.github.io/Spotify-API/
+
 ## Features
 
 - Browse music genres from Spotify
@@ -30,8 +32,8 @@ To run this project, you need the following:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/spotify-playlist-browser.git
-    cd spotify-playlist-browser
+    git clone https://github.com/KAJA-MOIDEEN/Spotify-API
+    cd Spotify-API
     ```
 
 2. Open the project directory and edit the `script.js` file to include your Spotify API credentials:
