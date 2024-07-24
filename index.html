@@ -10,39 +10,62 @@
     <link rel="icon" sizes="16x16" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon16.1c487bff.png">
     <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
 </head>
-<body>
-    <audio id="audio-player" controls style="display:none;"></audio>
-    <div class="container mt-5">
-        <h1 class="text-center text-white mb-4">Spotify Web API</h1>
+<body class="bg-dark text-white">
+    <header class="bg-primary py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" alt="Spotify Logo" class="mr-3">
+                <h1 class="h3 mb-0">Spotify Web API</h1>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <audio id="audio-player" controls style="display:none;"></audio>
         <form action="" class="mb-4">
             <input type="hidden" id="hidden_token">
             <div class="form-group">
-                <label for="select_genre" class="text-white">Genre:</label>
+                <label for="select_genre">Genre:</label>
                 <select id="select_genre" class="form-control">
                     <option>Select...</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="select_playlist" class="text-white">Playlists:</label>
+                <label for="select_playlist">Playlists:</label>
                 <select id="select_playlist" class="form-control">
                     <option>Select...</option>
                 </select>
             </div>
             <button type="submit" id="btn_submit" class="btn btn-spotify btn-block">Search</button>
-            
-           
-              
-
         </form>
         <div class="row">
             <div class="col-md-6">
                 <div class="list-group song-list"></div>
             </div>
             <div class="col-md-6">
-                <div id="song-detail" class="text-white"></div>
+                <div id="song-detail"></div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="bg-primary py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Spotify API Demo. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxH9K/ScQsAP7HUbQX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
